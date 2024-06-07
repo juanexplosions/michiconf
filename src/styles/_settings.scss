@@ -1,0 +1,17 @@
+$background-color: #030406;
+$primary-color: #ffffff;
+$secondary-color: #AD00E6;
+$tertiary-color: #00BCB1;
+
+@import 'https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swa';
+
+
+body {
+  background-color: $background-color;
+  font-family: "Readex Pro", sans-serif;
+  color: $primary-color;
+  margin: 0px;
+  p{
+    margin: 0px;
+  }
+}

@@ -1,0 +1,25 @@
+@import 'src/styles/_settings';
+
+.signup-button{
+    text-decoration: none;
+    
+
+    .signup-button__button{
+        display: flex;
+        background-color: $primary-color;
+        border: none;
+        border-radius: 24px;
+        font-size: 20px;
+        padding: 1px;
+    }
+
+    .signup-button__text{
+        color: $secondary-color;
+        margin: 12px 10px 12px 24px;
+    }
+
+    .signup-button__icon{
+        color: $secondary-color;
+        margin: 12px 24px 12px 0px;
+    }
+}

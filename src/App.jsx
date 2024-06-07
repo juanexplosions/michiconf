@@ -1,9 +1,9 @@
-import './app.scss'
+import Hero from "/src/components/Hero/Hero.jsx"
 
 function App() {
 
   return (
-    <div className='test'>Hello React</div>
+    <Hero />
   )
 }
 

@@ -1,0 +1,115 @@
+@import 'src/styles/_settings';
+
+
+
+.hero__nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 120px;
+    font-size: 14px;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.hero__nav-list{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 28px;
+    .hero__nav-item{
+        margin-left: 0px;
+        .hero__nav-link{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.hero__signup-button{
+    background-color: transparent;
+    border: 1px solid white;
+    color: $primary-color;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 16px;
+}
+
+
+.hero__main-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 62px 120px;
+    position: relative;
+}
+
+.hero__logo-conf{
+    height: 236.85px;
+    width: 542px;
+}
+
+.hero__background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+}
+
+.hero__detail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.hero__date{
+    display: flex;
+}
+
+.hero__location{
+    display: flex;
+    margin-bottom: 22px;
+}
+
+.hero__icon{
+    font-size: 24px;
+    margin-right: 8px;
+    opacity: 0.6;
+}
+
+.hero__icon-circle{
+    height: 7px;
+    width: 7px;
+    align-self: center;
+    color: $tertiary-color;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.hero__secondary-info{
+    padding-left: 56px;
+}
+
+.hero__description{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-right: 14px;
+}
+
+.hero__image{
+    height: auto;
+    width: 541px;
+}
+
+.hero__blur{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
