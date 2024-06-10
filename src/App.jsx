@@ -1,10 +1,14 @@
-import Hero from "/src/components/Hero/Hero.jsx"
+import Hero from "/src/components/Hero/Hero.jsx";
+import Speakers from "/src/components/Speakers/Speakers.jsx";
 
 function App() {
-
   return (
-    <Hero />
-  )
+    <>
+      <Hero />
+      <Speakers />
+      <Highlights />
+    </>
+  );
 }
 
-export default App
+export default App;

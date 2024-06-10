@@ -1,0 +1,57 @@
+@import "src/styles/_settings";
+
+.speaker {
+
+  &__container {
+    background-color: $card-background;
+    height: 397px;
+    width: 368px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__image-container {
+    height: 261px;
+    width: 336px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 16px;
+  }
+
+  &__title{
+    line-height: 24px;
+    margin-bottom: 16px;
+    min-height: 52px;
+  }
+
+  &__info{
+    margin: 16px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  &__profile {
+    display: flex;
+  }
+
+  &__name {
+    color: $tertiary-color;
+  }
+
+  &__job::before {
+    content: "-";
+    margin: 0px 5px;
+  }
+}

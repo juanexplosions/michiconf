@@ -2,6 +2,7 @@ $background-color: #030406;
 $primary-color: #ffffff;
 $secondary-color: #AD00E6;
 $tertiary-color: #00BCB1;
+$card-background: #333438;
 
 @import 'https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swa';
 
@@ -14,4 +15,6 @@ body {
   p{
     margin: 0px;
   }
+
+  
 }
