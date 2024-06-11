@@ -1,0 +1,136 @@
+@import "src/styles/_settings";
+
+.highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 105px 148px 150px 148px;
+  position: relative;
+
+  &__decoration{
+    position: absolute;
+  }
+
+  &__title {
+    margin: 0px;
+    font-size: 40px;
+    line-height: 120%;
+    font-weight: 700;
+  }
+
+  &__description {
+    margin-top: 4px;
+    margin-bottom: 56px;
+    padding-right: 64px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #cdced0;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 32px;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    color: #a9aaad;
+  }
+
+  &__number {
+    font-size: 48px;
+    font-weight: 300;
+    min-width: 68px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 170%;
+    min-width: 364px;
+    align-self: center;
+    font-weight: 300;
+  }
+
+  &__item--active {
+    display: flex;
+  }
+
+  &__number--active {
+    font-size: 48px;
+    font-weight: 500;
+    min-width: 68px;
+    background: -webkit-linear-gradient($primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__text--active {
+    font-size: 18px;
+    line-height: 170%;
+    min-width: 364px;
+    align-self: center;
+    font-weight: 700;
+    background: -webkit-linear-gradient($primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__text--active::before, &__text::before {
+    content: "";
+    margin-left: 8px;
+  }
+
+  &__panel{
+    position: relative;
+    height: 475px;
+    width: 562px;
+    background-color: rgba($color: #1D1E22, $alpha: 0.6);
+    border-radius: 24px;
+    z-index: -2;
+    margin-top: 61px;
+  }
+
+  &__border{
+    position: absolute;
+    height: 475px;
+    width: 562px;
+    border-radius: 24px;
+    border: 1px solid transparent;
+    background: linear-gradient(229deg, rgba(192, 0, 255, 1) 0%, rgba(0, 188, 177, 1) 100%) border-box;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 50%;
+    z-index: -1;
+  }
+
+  &__description-panel{
+    margin: 48px 291px 297px 32px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #A9AAAD;
+    z-index: 2;
+    line-height: 26px;
+  }
+
+  &__cat{
+    position: absolute;
+    bottom: -34px;
+    right: 0px;
+    height: 341px;
+    width: 341px;
+    z-index: 2;
+  }
+
+  &__background-cat{
+    position: absolute;
+    top: -125px;
+    right: -125px;
+    z-index: -1;
+  }
+}
