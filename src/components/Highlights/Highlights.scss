@@ -3,11 +3,15 @@
 .highlights {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 105px 148px 150px 148px;
+  padding: 121px 148px 117px 148px;
   position: relative;
 
   &__decoration{
     position: absolute;
+    height: 1017px;
+    margin-left: 319px;
+    margin-top: 148px;
+    z-index: -4;
   }
 
   &__title {

@@ -5,7 +5,7 @@ export default function SpeakerCard() {
     <>
       <div className="speaker__container">
         <div className="speaker__image-container">
-          <img src="public/speaker-01.png" alt="" className="speaker__image" />
+          <img src="/speaker-01.png" alt="" className="speaker__image" />
         </div>
         <div className="speaker__info">
           <p className="speaker__title">

@@ -7,7 +7,7 @@ export default function Hero() {
     <>
       <header className="hero">
         <img
-          src="public/hero-background.png"
+          src="/hero-background.png"
           alt=""
           className="hero__background"
         />

@@ -1,0 +1,75 @@
+@import "src/styles/_settings";
+
+.faq {
+  padding: 100px 148px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+
+  &__decoration {
+    position: absolute;
+    height: 1017px;
+    z-index: -4;
+    height: 754px;
+    width: auto;
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 700;
+    margin: 0px;
+
+    &::after {
+      content: "MichiCONF";
+      background: -webkit-linear-gradient($primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__info {
+    padding-right: 85px;
+  }
+
+  &__description {
+    margin-top: 16px;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #cdced0;
+    margin-right: 97px;
+  }
+
+  &__menu {
+    .accordion__item {
+      border-bottom: 1px solid #e0e0e0;
+      padding: 16px 0;
+
+      .accordion__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        padding: 16px;
+        border-radius: 8px;
+
+        h3 {
+          margin: 0;
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+        span {
+          font-size: 24px;
+          font-weight: 700;
+          color: $primary-color;
+        }
+      }
+
+      .accordion__content {
+        padding: 16px;
+      }
+    }
+  }
+}
