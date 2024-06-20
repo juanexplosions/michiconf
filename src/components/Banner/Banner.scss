@@ -1,0 +1,19 @@
+@import "src/styles/_settings";
+
+.banner{
+    margin: 103px 148px 146px 148px;
+    background-color: blue;
+    padding: 48px 274.5px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    border-radius: 24px;
+
+    &__title{
+        text-align: center;
+        margin-bottom: 49px;
+        margin-top: 0px;
+        line-height: 120%;
+        font-size: 40px;
+    }
+}

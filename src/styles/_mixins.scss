@@ -1,0 +1,7 @@
+@import "src/styles/_settings";
+
+@mixin main-gradient {
+    background: -webkit-linear-gradient($primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

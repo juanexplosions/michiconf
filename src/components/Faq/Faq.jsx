@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import "./Faq.scss";
+import { Icon } from "@iconify/react/dist/iconify.js";
+
 
 const AccordionItem = ({ title, content, isOpen, onClick }) => (
   <div className="accordion__item">
     <div className="accordion__title" onClick={onClick}>
-      <h3>{title}</h3>
-      <span>{isOpen ? '-' : '+'}</span>
+      <h3 className="accordion__title-text">{title}</h3>
+      <Icon className='accordion__icon' icon={isOpen ? 'ic:round-minus' : 'ic:baseline-plus'}></Icon>
     </div>
     {isOpen && <div className="accordion__content">{content}</div>}
   </div>

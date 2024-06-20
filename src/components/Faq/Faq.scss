@@ -3,7 +3,8 @@
 .faq {
   padding: 100px 148px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  gap: 85px;
+  grid-template-columns: 1fr 1.6fr;
   position: relative;
 
   &__decoration {
@@ -28,9 +29,7 @@
     }
   }
 
-  &__info {
-    padding-right: 85px;
-  }
+ 
 
   &__description {
     margin-top: 16px;
@@ -38,29 +37,34 @@
     font-size: 16px;
     font-weight: 300;
     color: #cdced0;
-    margin-right: 97px;
+
   }
 
   &__menu {
     .accordion__item {
-      border-bottom: 1px solid #e0e0e0;
-      padding: 16px 0;
+      border-bottom: 1px solid #3E3F40;
+      padding: 32.5px 0px 24.5px 0px;
+
+      &:first-child {
+        padding-top: 0px;
+      }
 
       .accordion__title {
         display: flex;
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
-        padding: 16px;
         border-radius: 8px;
+        
 
-        h3 {
+        .accordion__title-text {
           margin: 0;
-          font-size: 18px;
-          font-weight: 600;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 20px;
         }
 
-        span {
+        .accordion__icon {
           font-size: 24px;
           font-weight: 700;
           color: $primary-color;
@@ -68,7 +72,11 @@
       }
 
       .accordion__content {
-        padding: 16px;
+        padding-top: 12px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #cdced0;
       }
     }
   }

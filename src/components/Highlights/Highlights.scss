@@ -1,4 +1,5 @@
 @import "src/styles/_settings";
+@import "src/styles/_mixins";
 
 .highlights {
   display: grid;
@@ -66,9 +67,7 @@
     font-size: 48px;
     font-weight: 500;
     min-width: 68px;
-    background: -webkit-linear-gradient($primary-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include main-gradient;
   }
 
   &__text--active {
@@ -77,9 +76,7 @@
     min-width: 364px;
     align-self: center;
     font-weight: 700;
-    background: -webkit-linear-gradient($primary-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include main-gradient;
   }
 
   &__text--active::before, &__text::before {
