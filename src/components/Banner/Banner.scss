@@ -2,12 +2,14 @@
 
 .banner{
     margin: 103px 148px 146px 148px;
-    background-color: blue;
+    background-color: #5C62D6;
     padding: 48px 274.5px;
     display: flex;
     flex-direction: column;
     place-items: center;
     border-radius: 24px;
+    position: relative;
+    z-index: -2;
 
     &__title{
         text-align: center;
@@ -15,5 +17,24 @@
         margin-top: 0px;
         line-height: 120%;
         font-size: 40px;
+    }
+
+    &__gradient{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        z-index: -1;
+        background: radial-gradient(#560073, #030406);
+        border-radius: 24px;
+        opacity: 0.6;
+    }
+
+    &__light{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        z-index: -1;
     }
 }
