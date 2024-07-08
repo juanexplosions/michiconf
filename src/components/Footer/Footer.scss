@@ -6,9 +6,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 105px 148px 69px 148px;
+    padding: 6% 0px 4% 0px;
+    margin: auto;
+    width: 80vw;
     grid-auto-flow: column;
     row-gap: 16px;
+    max-width: 1200px;
   }
 
   &__decoration {

@@ -4,7 +4,9 @@
 .highlights {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 121px 148px 117px 148px;
+  margin: auto;
+  width: 80%;
+  max-width: 1200px;
   position: relative;
 
   &__decoration{
@@ -86,8 +88,8 @@
 
   &__panel{
     position: relative;
-    height: 475px;
-    width: 562px;
+    max-height: 475px;
+    width: auto;
     background-color: rgba($color: #1D1E22, $alpha: 0.6);
     border-radius: 24px;
     z-index: -2;
@@ -96,8 +98,8 @@
 
   &__border{
     position: absolute;
-    height: 475px;
-    width: 562px;
+    height: 100%;
+    width: 100%;
     border-radius: 24px;
     border: 1px solid transparent;
     background: linear-gradient(229deg, rgba(192, 0, 255, 1) 0%, rgba(0, 188, 177, 1) 100%) border-box;
@@ -111,7 +113,7 @@
   }
 
   &__description-panel{
-    margin: 48px 291px 297px 32px;
+    margin: 10% 55% 60% 5%;
     font-size: 18px;
     font-weight: 300;
     color: #A9AAAD;
@@ -123,9 +125,11 @@
     position: absolute;
     bottom: -34px;
     right: 0px;
-    height: 341px;
-    width: 341px;
+    max-height: 341px;
+    object-fit: contain;
+    width: 70%;
     z-index: 2;
+    height: auto;
   }
 
   &__background-cat{

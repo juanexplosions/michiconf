@@ -4,7 +4,7 @@ export default function Highlights() {
   return (
     <>
       <section className="highlights">
-        <img src="/highlights-decoration.png" alt="" className="highlights__decoration"/>
+        {/* <img src="/highlights-decoration.png" alt="" className="highlights__decoration"/> */}
         <div className="highlights__selector">
           <h2 className="highlights__title">
             ¿Por qué no te puedes perder la MichiCONF?
@@ -39,7 +39,7 @@ export default function Highlights() {
             hacerte reír a carcajadas y dejarte boquiabierto.
           </p>
           <img src="/michi-01.png" alt="" className="highlights__cat" />
-          <img src="/michi-background-01.png" alt="" className="highlights__background-cat"/>
+          <div className="highlights__background-cat"></div>
         </div>
       </section>
     </>

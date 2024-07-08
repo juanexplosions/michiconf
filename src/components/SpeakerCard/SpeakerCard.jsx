@@ -1,9 +1,20 @@
 import "/src/components/SpeakerCard/SpeakerCard.scss";
 
 export default function SpeakerCard() {
+
+  const handleClick = (event) => {
+    alert("Hola");
+  }
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      alert("Hola");
+    }
+  }
+
   return (
     <>
-      <div className="speaker__container">
+      <div className="speaker__container" tabIndex={0} onClick={handleClick} onKeyDown={handleKeyDown}>
         <div className="speaker__image-container">
           <img src="/speaker-01.png" alt="" className="speaker__image" />
         </div>

@@ -6,8 +6,8 @@ export default function Banner() {
     <section className="banner">
       <div className="banner__gradient"></div>
       <img src="/banner-light.png" alt="" className="banner__light"/>
-      <h2 className="banner__title">Are you ready to get started? We got you covered!</h2>
-      <SignupButton className="banner_signup"/>
+      <h2 className="banner__title">Are you ready to get started? <br /> We got you covered!</h2>
+      <SignupButton className="banner__signup"/>
     </section>
   );
 }

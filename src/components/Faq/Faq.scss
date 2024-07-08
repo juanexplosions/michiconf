@@ -1,7 +1,10 @@
 @import "src/styles/_settings";
 
 .faq {
-  padding: 100px 148px;
+  margin: auto;
+  margin-top: 10%;
+  width: 80%;
+  max-width: 1200px;
   display: grid;
   gap: 85px;
   grid-template-columns: 1fr 1.6fr;
@@ -9,10 +12,9 @@
 
   &__decoration {
     position: absolute;
-    height: 1017px;
+    height: auto;
     z-index: -4;
-    height: 754px;
-    width: auto;
+    width: 100vw;
   }
 
   &__title {

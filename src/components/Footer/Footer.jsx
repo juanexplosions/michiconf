@@ -1,11 +1,12 @@
 import "./Footer.scss";
+import { FooterPatitas } from "/src/components/svg/FooterPatitas.jsx";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 export default function Footer() {
   return (
     <>
       <footer className="footer">
-        <img src="/footer-patitas.svg" alt="" className="footer__decoration" />
+     {/* <img src="/footer-patitas.svg" alt="" className="footer__decoration" /> */}
         <div className="footer__container">
           <img src="/michiconf-gradient.svg" alt="" />
           <p className="footer__text">

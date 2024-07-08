@@ -1,11 +1,9 @@
 @import "src/styles/_settings";
 
 .speaker {
-
   &__container {
     background-color: $card-background;
-    height: 397px;
-    width: 368px;
+    max-width: fit-content;
     border-radius: 16px;
     overflow: hidden;
   }
@@ -23,20 +21,19 @@
   }
 
   &__image-container {
-    height: 261px;
-    width: 336px;
+    max-height: fit-content;
     overflow: hidden;
     border-radius: 12px;
     margin: 16px;
   }
 
-  &__title{
+  &__title {
     line-height: 24px;
     margin-bottom: 16px;
     min-height: 52px;
   }
 
-  &__info{
+  &__info {
     margin: 16px;
     font-size: 16px;
     font-weight: 300;

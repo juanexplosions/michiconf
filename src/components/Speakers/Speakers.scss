@@ -1,16 +1,17 @@
 @import "src/styles/_settings";
 
 .speakers {
-    position: relative;
+  position: relative;
 
   &__grid {
+    margin: auto;
+    width: 80%;
+    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     column-gap: 20px;
     row-gap: 24px;
-    margin-left: 148px;
-    margin-right: 148px;
   }
 
   &__title {
@@ -18,7 +19,7 @@
     justify-content: center;
     font-size: 40px;
     font-weight: 700;
-    margin-top: 0px;
+    margin-top: 2%;
     margin-bottom: 48px;
   }
 
@@ -29,12 +30,20 @@
     margin-bottom: 102px;
   }
 
-  &__decoration {
+  &__decoration-left {
     position: absolute;
-    margin-top: 138px;
-    top: 0;
+    top: 30%;
     left: 0;
+    transform: translateY(-30%);
     z-index: -1;
-    width: 100vw;
+  }
+
+  &__decoration-right {
+    position: absolute;
+    top: 75%;
+    right: 0;
+    transform: translateY(-75%);
+    z-index: -1;
+    height: 60%; /* revisar height*/
   }
 }
