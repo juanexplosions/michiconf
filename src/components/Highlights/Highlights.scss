@@ -9,7 +9,7 @@
   max-width: 1200px;
   position: relative;
 
-  &__decoration{
+  &__decoration {
     position: absolute;
     height: 1017px;
     margin-left: 319px;
@@ -81,30 +81,35 @@
     @include main-gradient;
   }
 
-  &__text--active::before, &__text::before {
+  &__text--active::before,
+  &__text::before {
     content: "";
     margin-left: 8px;
   }
 
-  &__panel{
+  &__panel {
     position: relative;
     max-height: 475px;
     width: auto;
-    background-color: rgba($color: #1D1E22, $alpha: 0.6);
+    background-color: rgba($color: #1d1e22, $alpha: 0.6);
     border-radius: 24px;
     z-index: -2;
     margin-top: 61px;
   }
 
-  &__border{
+  &__border {
     position: absolute;
     height: 100%;
     width: 100%;
     border-radius: 24px;
     border: 1px solid transparent;
-    background: linear-gradient(229deg, rgba(192, 0, 255, 1) 0%, rgba(0, 188, 177, 1) 100%) border-box;
-    -webkit-mask:
-      linear-gradient(#fff 0 0) padding-box,
+    background: linear-gradient(
+        229deg,
+        rgba(192, 0, 255, 1) 0%,
+        rgba(0, 188, 177, 1) 100%
+      )
+      border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
       linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
@@ -112,30 +117,58 @@
     z-index: -1;
   }
 
-  &__description-panel{
-    margin: 10% 55% 60% 5%;
+  &__description-panel {
+    margin: 10% 45% 60% 5%;
     font-size: 18px;
     font-weight: 300;
-    color: #A9AAAD;
-    z-index: 2;
+    color: #a9aaad;
+    z-index: 1;
     line-height: 26px;
   }
 
-  &__cat{
+  &__cat {
     position: absolute;
     bottom: -34px;
-    right: 0px;
+    right: 10%;
+    transform: translateX(20%);
     max-height: 341px;
     object-fit: contain;
     width: 70%;
     z-index: 2;
     height: auto;
+    min-width: 300px;
   }
 
-  &__background-cat{
+  &__circle {
+    width: min(24vw, 390px);
+    height: min(24vw, 390px);
+    border-radius: 50%;
+    background-color: $circle-primary;
+    opacity: 0.24;
     position: absolute;
-    top: -125px;
-    right: -125px;
+    top: -15%;
+    right: -15%;
     z-index: -1;
+    filter: drop-shadow(-49px 93px 11px rgba(176, 99, 212, 0.08)) blur(50px);
+  }
+
+  &__paws{
+    position: absolute;
+    top: 65%;
+    left: -60%;
+    z-index: -3;
+    transform: translateX(-10%);
+    transform: translateY(-10%);
+    width: 115%;
+    max-width: 643px;
+  }
+
+  &__star{
+    position: absolute;
+    top: -6%;
+    left: -11%;
+    transform: translateX(10%);
+    width: 9%;
+    max-width: 50px;
   }
 }

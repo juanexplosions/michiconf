@@ -32,18 +32,26 @@
 
   &__decoration-left {
     position: absolute;
-    top: 30%;
-    left: 0;
-    transform: translateY(-30%);
+    top: 10%;
+    height: auto;
+    width: 21vw;
+    left: -18%;
+    transform: translateX(-50%);
     z-index: -1;
+    max-width: 300px;
   }
 
   &__decoration-right {
     position: absolute;
-    top: 75%;
-    right: 0;
-    transform: translateY(-75%);
+    right: -265%;
+    bottom: -116%;
     z-index: -1;
-    height: 60%; /* revisar height*/
+    width: 19vw;
+    max-width: 270px;
+    transform: translateX(-15%);
+
+  }
+  &__container {
+    position: relative;
   }
 }

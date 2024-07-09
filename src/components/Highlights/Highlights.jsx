@@ -4,7 +4,6 @@ export default function Highlights() {
   return (
     <>
       <section className="highlights">
-        {/* <img src="/highlights-decoration.png" alt="" className="highlights__decoration"/> */}
         <div className="highlights__selector">
           <h2 className="highlights__title">
             ¿Por qué no te puedes perder la MichiCONF?
@@ -33,6 +32,9 @@ export default function Highlights() {
           </ul>
         </div>
         <div className="highlights__panel">
+          <img src="/highlights-star.svg" alt="" className="highlights__star" />
+          <img src="/highlights-paws.png" alt="" className="highlights__paws" />
+          <div className="highlights__circle"></div>
           <div className="highlights__border"></div>
           <p className="highlights__description-panel">
             Cada charla, cada taller, y cada actividad están diseñados para

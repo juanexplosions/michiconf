@@ -41,10 +41,15 @@
 
   &__profile {
     display: flex;
+    justify-content: space-between;
   }
 
   &__name {
     color: $tertiary-color;
+  }
+
+  &__job {
+    color: #CDCED0;
   }
 
   &__job::before {
