@@ -57,8 +57,9 @@ export default function Faq() {
 
   return (
     <section className="faq">
-      {/* <img src="/faq-decoration.png" alt="" className="faq__decoration" /> */}
       <div className="faq__info">
+        <div className="faq__circle-upper"></div>
+        <div className="faq__circle-lower"></div>
         <h2 className="faq__title">Todo lo que debes saber sobre la </h2>
         <p className="faq__description">
           Encuentra respuestas a todas tus preguntas (y tal vez algunas que
@@ -66,6 +67,7 @@ export default function Faq() {
         </p>
       </div>
       <div className="faq__menu">
+        <img src="/faq-paws.png" alt="" className="faq__paws" />
         {faqItems.map((item, index) => (
           <AccordionItem
             key={index}

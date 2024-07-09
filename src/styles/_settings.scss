@@ -5,6 +5,18 @@ $tertiary-color: #00bcb1;
 $card-background: #333438;
 $primary-gradient: 0deg, rgba(192, 0, 255, 1) 0%, rgba(0, 188, 177, 1) 100%;
 $circle-primary: #9053DD;
+$circle-secondary: #26EFEF;
+
+@mixin circle-styles($bg-color) {
+  width: min(24vw, 413px);
+  height: min(24vw, 413px);
+  border-radius: 50%;
+  background-color: $bg-color;
+  opacity: 0.2;
+  position: absolute;
+  z-index: -1;
+  filter: drop-shadow(-49px 93px 11px rgba(176, 99, 212, 0.08)) blur(50px);
+}
 
 @import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swa";
 

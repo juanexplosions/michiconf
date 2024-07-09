@@ -10,11 +10,16 @@
   grid-template-columns: 1fr 1.6fr;
   position: relative;
 
-  &__decoration {
-    position: absolute;
-    height: auto;
-    z-index: -4;
-    width: 100vw;
+  &__circle-upper {
+    @include circle-styles($circle-primary);
+    top: 24%;
+    left: -8%;
+  }
+
+  &__circle-lower {
+    @include circle-styles($circle-secondary);
+    top: 8%;
+    left: -18%;
   }
 
   &__title {
@@ -81,5 +86,17 @@
         color: #cdced0;
       }
     }
+  }
+
+  &__paws{
+    position: absolute;
+    top: 38%;
+    right: -18%;
+    z-index: -3;
+    transform: translateX(-10%);
+    transform: translateY(-10%);
+    width: 48%;
+    max-width: 536px;
+    
   }
 }
