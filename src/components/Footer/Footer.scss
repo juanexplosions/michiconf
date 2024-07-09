@@ -17,7 +17,9 @@
   &__decoration {
     position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%; // Ajusta la altura según tus necesidades
+    background: url("/footer-patitas.svg");
+    background-size: contain;
     mask-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 1) 0%,
@@ -31,8 +33,12 @@
   }
 
   &__made-by {
-    background: linear-gradient(45deg, rgba(255, 250, 250, 0.07), rgba(255, 242, 242, 0.03) 100%);
-    backdrop-filter:  blur(128px);
+    background: linear-gradient(
+      45deg,
+      rgba(255, 250, 250, 0.07),
+      rgba(255, 242, 242, 0.03) 100%
+    );
+    backdrop-filter: blur(128px);
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
     padding-top: 8px;
@@ -42,7 +48,7 @@
     line-height: 20px;
     color: #a9aaad;
 
-    border: 1px solid rgba($color: #AE11F8, $alpha: 0.5);
+    border: 1px solid rgba($color: #ae11f8, $alpha: 0.5);
   }
 
   &__social-media {

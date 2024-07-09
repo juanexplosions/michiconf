@@ -6,8 +6,8 @@ export default function Footer() {
   return (
     <>
       <footer className="footer">
-     {/* <img src="/footer-patitas.svg" alt="" className="footer__decoration" /> */}
-        <div className="footer__container">
+      <div className="footer__decoration"></div>
+      <div className="footer__container">
           <img src="/michiconf-gradient.svg" alt="" />
           <p className="footer__text">
             MichiConf reserva sus derechos de admisión <br /> (sí, no queremos
