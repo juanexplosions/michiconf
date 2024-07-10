@@ -55,3 +55,25 @@
     position: relative;
   }
 }
+
+@media (max-width: 1023px){
+  .speakers {
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 15%;
+      width: 90%;
+      max-width: 490px;
+    }
+
+    &__decoration-left {
+      top: -6%;
+      left: -20%;
+    }
+
+    &__decoration-right {
+      right: -18%;
+      bottom: -6%;
+    }
+  }
+}

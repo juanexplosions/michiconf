@@ -36,20 +36,17 @@
     }
   }
 
- 
-
   &__description {
     margin-top: 16px;
     line-height: 24px;
     font-size: 16px;
     font-weight: 300;
     color: #cdced0;
-
   }
 
   &__menu {
     .accordion__item {
-      border-bottom: 1px solid #3E3F40;
+      border-bottom: 1px solid #3e3f40;
       padding: 32.5px 0px 24.5px 0px;
 
       &:first-child {
@@ -62,7 +59,6 @@
         align-items: center;
         cursor: pointer;
         border-radius: 8px;
-        
 
         .accordion__title-text {
           margin: 0;
@@ -88,7 +84,7 @@
     }
   }
 
-  &__paws{
+  &__paws {
     position: absolute;
     top: 38%;
     right: -18%;
@@ -97,6 +93,35 @@
     transform: translateY(-10%);
     width: 48%;
     max-width: 536px;
-    
+  }
+}
+
+@media (max-width: 1023px) {
+  .faq {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    width: 90%;
+    max-width: 490px;
+    &__circle-upper {
+      top: -6%;
+      left: -20%;
+    }
+
+    &__circle-lower {
+      top: -18%;
+      left: -35%;
+    }
+
+    &__paws {
+      position: absolute;
+      top: 74%;
+      right: 5%;
+      transform: translateX(-10%);
+      width: 90vw;
+      rotate: 50deg;
+      max-width: 400px;
+    }
   }
 }

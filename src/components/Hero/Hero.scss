@@ -195,3 +195,42 @@
     rgba(255, 255, 255, 0) 100%
   );
 }
+
+
+@media (max-width: 1023px)  {
+  .hero{
+    &__background-left {
+    top: -80px;
+    left: -100px;
+    z-index: -4;
+    width: 340px;
+    height: auto;
+    filter: blur(30px);
+    }
+
+    &__background-right {
+      top: -50px;
+      right: -100px;
+      z-index: -4;
+      width: 150px;
+      height: auto;
+      filter: blur(30px);
+    }
+
+    &__main-info{
+      grid-template-columns: 1fr;
+      width: 90vw;
+      margin-top: 20px;
+    }
+
+    &__nav-list{
+      display: none;
+    }
+
+    &__signup-button{
+      display: none;
+    }
+
+    
+  }
+}
