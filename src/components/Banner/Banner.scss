@@ -47,3 +47,24 @@
     z-index: -1;
   }
 }
+
+@media (max-width: 1023px){
+  .banner {
+    margin-top: 125px;
+    margin-bottom: 10%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 300px;
+
+    &__title {
+      font-size: 24px;
+      line-height: 42px;
+      padding-left: 5%;
+      padding-right: 5%;
+      margin-bottom: 30px;
+
+    }
+  }
+}

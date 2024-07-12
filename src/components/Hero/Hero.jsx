@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <>
       <header className="hero">
-      <div className="hero__noise"></div>
+        <div className="hero__noise"></div>
         <div className="hero__blur"></div>
 
         <nav className="hero__nav">
@@ -48,41 +48,36 @@ export default function Hero() {
           </button>
         </nav>
         <section className="hero__main-info">
-          <div className="hero__detail">
-            <img
-              src="./michiconf-title.svg"
-              alt=""
-              className="hero__logo-conf"
-            />
-            <div className="hero__date">
-              <Icon icon="ic:outline-calendar-today" className="hero__icon" />
-              <p className="hero__date-text">Agosto 08</p>
-            </div>
-            <div className="hero__location">
-              <Icon icon="ic:outline-location-on" className="hero__icon" />
-              <p className="hero__location-text">Anekacanekulo</p>
-              <p>Online</p>
-            </div>
+          <img src="./michiconf-title.svg" alt="" className="hero__logo-conf" />
+          <div className="hero__date">
+            <Icon icon="ic:outline-calendar-today" className="hero__icon" />
+            <p className="hero__date-text">Agosto 08</p>
+          </div>
+          <div className="hero__location">
+            <Icon icon="ic:outline-location-on" className="hero__icon" />
+            <p className="hero__location-text">Anekacanekulo</p>
+            <p>Online</p>
+          </div>
+          <div className="hero__signup">
             <SignupButton />
           </div>
-          <div className="hero__secondary-info">
-            <div className="hero__image-container">
-              <img
-                src="hero-background-right.png"
-                alt=""
-                className="hero__background-right"
-              />
-              <p className="hero__description">
-                ¡Únete a la aventura más gatuna y extravagante que hayas visto!
-                Desde Elon Musk hasta Bill gates, una conf nunca antes vista.
-              </p>
-              <img src="/hero-image.png" alt="" className="hero__image" />
-              <img
-                src="/hero-background-center.png"
-                alt=""
-                className="hero__background-center"
-              />
-            </div>
+          <p className="hero__description">
+              ¡Únete a la aventura más gatuna y extravagante que hayas visto!
+              Desde Elon Musk hasta Bill gates, una conf nunca antes vista.
+            </p>
+          <div className="hero__image-container">
+            <img
+              src="hero-background-right.png"
+              alt=""
+              className="hero__background-right"
+            />
+
+            <img src="/hero-image.png" alt="" className="hero__image" />
+            <img
+              src="/hero-background-center.png"
+              alt=""
+              className="hero__background-center"
+            />
           </div>
         </section>
       </header>

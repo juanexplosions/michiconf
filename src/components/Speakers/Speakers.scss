@@ -56,24 +56,23 @@
   }
 }
 
-@media (max-width: 1023px){
+@media (max-width: 1023px) {
   .speakers {
     &__grid {
-      grid-template-columns: 1fr;
-      gap: 10px;
-      margin-top: 15%;
-      width: 90%;
-      max-width: 490px;
-    }
-
-    &__decoration-left {
-      top: -6%;
-      left: -20%;
+      display: flex;
+      overflow-x:scroll;
+      overflow-y: hidden;
+      width: auto;
+      margin-right: 0;
+      margin-left: 0;
     }
 
     &__decoration-right {
-      right: -18%;
-      bottom: -6%;
+      display: none;
+    }
+
+    &__decoration-left {
+      display: none;
     }
   }
 }
