@@ -9,13 +9,14 @@ export default function Speakers() {
       <section className="speakers">
         <h2 className="speakers__title">Speakers</h2>
         <div className="speakers__grid">
-          {speakersInfo.map((speakerInfo) => (
+          {speakersInfo.map((speakerInfo, index) => (
             <SpeakerCard
               key={speakerInfo.id}
               name={speakerInfo.name}
               job={speakerInfo.job}
               title={speakerInfo.title}
               img={speakerInfo.img}
+              className={index === 0 ? "first-speaker" : index === speakersInfo.length - 1 ? "last-speaker" : ""}
             />
           ))}
         </div>

@@ -4,6 +4,7 @@
   position: relative;
 
   &__grid {
+    position: relative;
     margin: auto;
     width: 80%;
     max-width: 1200px;
@@ -47,23 +48,38 @@
     width: 19vw;
     max-width: 270px;
     transform: translateX(-15%);
-
   }
   &__background-container {
     position: relative;
   }
 }
 
+
+.first-speaker::before,
+.last-speaker::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  z-index: -5;
+}
+
+.first-speaker::before {
+  background-image: url("/speakers-decoration-left.svg");
+  top: -10px;
+  left: -100px;
+}
+
 @media (max-width: 1023px) {
   .speakers {
     &__grid {
       display: flex;
-      overflow-x:scroll;
+      overflow-x: scroll;
       width: auto;
       margin-right: 0;
       margin-left: 0;
       column-gap: 15px;
-
     }
 
     &__decoration-right {

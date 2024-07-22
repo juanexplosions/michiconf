@@ -1,7 +1,9 @@
+// Highlights.js
 import "./Highlights.scss";
 import fixedCat from "../../data/fixedCats";
 import React, { useState } from "react";
 import { useWindowSize } from "@uidotdev/usehooks";
+import HighlightItem from "./HighlightItem";
 
 export default function Highlights() {
   const [activeColor, setActiveColor] = useState(1);
@@ -36,54 +38,23 @@ export default function Highlights() {
             y diversión.
           </p>
           {isMobile ? (
-            <>
-              <li
-                key={fixedCat[activeColor - 1].id}
-                className="highlights__item--active"
-              >
-                <p className="highlights__number--active">
-                  {fixedCat[activeColor - 1].id}
-                </p>
-                <p className="highlights__text--active">
-                  {fixedCat[activeColor - 1].title}
-                </p>
-              </li>
-            </>
+            <HighlightItem
+              id={fixedCat[activeColor - 1].id}
+              title={fixedCat[activeColor - 1].title}
+              isActive={true}
+            />
           ) : (
-            <>
-              <ul className="highlights__list">
-                {fixedCat.map((cat) => (
-                  <li
-                    key={cat.id}
-                    className={
-                      cat.id === activeColor
-                        ? "highlights__item--active"
-                        : "highlights__item"
-                    }
-                    onMouseEnter={() => handleActiveColor(cat.id)}
-                  >
-                    <p
-                      className={
-                        cat.id === activeColor
-                          ? "highlights__number--active"
-                          : "highlights__number"
-                      }
-                    >
-                      {cat.id}
-                    </p>
-                    <p
-                      className={
-                        cat.id === activeColor
-                          ? "highlights__text--active"
-                          : "highlights__text"
-                      }
-                    >
-                      {cat.title}
-                    </p>
-                  </li>
-                ))}{" "}
-              </ul>
-            </>
+            <ul className="highlights__list">
+              {fixedCat.map((cat) => (
+                <HighlightItem
+                  key={cat.id}
+                  id={cat.id}
+                  title={cat.title}
+                  isActive={cat.id === activeColor}
+                  onMouseEnter={() => handleActiveColor(cat.id)}
+                />
+              ))}
+            </ul>
           )}
         </div>
         <div className="highlights__panel">
