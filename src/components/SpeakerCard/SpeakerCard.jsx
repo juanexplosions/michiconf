@@ -1,6 +1,6 @@
 import "/src/components/SpeakerCard/SpeakerCard.scss";
 
-export default function SpeakerCard() {
+export default function SpeakerCard({ name, job, title, img }) {
   const handleClick = (event) => {
     alert("Hola");
   };
@@ -20,16 +20,15 @@ export default function SpeakerCard() {
         onKeyDown={handleKeyDown}
       >
         <div className="speaker__image-container">
-          <img src="/speaker-01.png" alt="" className="speaker__image" />
+          <img src={img} alt="" className="speaker__image" />
         </div>
         <div className="speaker__info">
           <p className="speaker__title">
-            "Por qué aruñar muebles es tan importante como levantar capital en
-            Sillicon valley"
+            {title}
           </p>
           <div className="speaker__profile">
             <p className="speaker__name">
-              Taychi Swift<span className="speaker__job">CEO en Miaupple</span>
+              {name}<span className="speaker__job">{job}</span>
             </p>
           </div>
         </div>

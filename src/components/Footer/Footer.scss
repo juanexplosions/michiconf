@@ -17,7 +17,7 @@
   &__decoration {
     position: absolute;
     width: 100%;
-    height: 100%; // Ajusta la altura según tus necesidades
+    height: 100%;
     background: url("/footer-patitas.svg");
     background-size: contain;
     mask-image: linear-gradient(
@@ -48,7 +48,7 @@
     line-height: 20px;
     color: #a9aaad;
 
-    border: 1px solid rgba($color: #ae11f8, $alpha: 0.5);
+    border: 1px solid rgba($color: #ae11f8, $alpha: 0.2);
   }
 
   &__social-media {
@@ -84,3 +84,43 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .footer {
+
+    &__decoration{
+      background-repeat: no-repeat;
+      background-position-y: 90%;
+      background-size: 150vh;
+
+    }
+    &__container {
+      max-width: 500px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      row-gap: 16px;
+      grid-auto-flow: row;
+      width: 90%;
+      padding-top: 42px;
+    }
+
+    &__social-media {
+      justify-content: start;
+    }
+
+    &__shorcuts {
+      justify-content: start;
+      display: grid;
+      grid-template-rows: repeat(4, auto);
+      margin-bottom: 56px;
+      margin-top: 56px;
+      row-gap: 40px;
+    }
+
+    &__made-by{
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 13px;
+      padding-bottom: 13px;
+    }
+  }
+}

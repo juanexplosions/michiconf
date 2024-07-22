@@ -49,7 +49,7 @@
   }
 
   &__job {
-    color: #CDCED0;
+    color: #cdced0;
   }
 
   &__job::before {
@@ -65,52 +65,61 @@
       max-width: fit-content;
       border-radius: 16px;
       overflow: hidden;
+      min-width: 270px;
+
+      &:first-child {
+        margin-left: 5%;
+      }
+
+      &:last-child {
+        margin-right: 5%;
+      }
     }
-  
+
     &__image {
       height: 100%;
       width: 100%;
       object-fit: contain;
       transform: scale(1);
       transition: all 0.5s ease-in-out;
-  
+
       &:hover {
         transform: scale(1.1);
       }
     }
-  
+
     &__image-container {
       max-height: fit-content;
       overflow: hidden;
       border-radius: 12px;
       margin: 16px;
     }
-  
+
     &__title {
       line-height: 24px;
       margin-bottom: 16px;
       min-height: 52px;
     }
-  
+
     &__info {
       margin: 16px;
       font-size: 16px;
       font-weight: 300;
     }
-  
+
     &__profile {
       display: flex;
       justify-content: space-between;
     }
-  
+
     &__name {
       color: $tertiary-color;
     }
-  
+
     &__job {
-      color: #CDCED0;
+      color: #cdced0;
     }
-  
+
     &__job::before {
       content: "-";
       margin: 0px 5px;

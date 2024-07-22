@@ -32,13 +32,11 @@
 
   &__decoration-left {
     position: absolute;
-    top: 10%;
-    height: auto;
-    width: 21vw;
-    left: -18%;
-    transform: translateX(-50%);
+    top: 20%;
+    left: -5%;
+    height: 506px;
+    width: auto;
     z-index: -1;
-    max-width: 300px;
   }
 
   &__decoration-right {
@@ -51,7 +49,7 @@
     transform: translateX(-15%);
 
   }
-  &__container {
+  &__background-container {
     position: relative;
   }
 }
@@ -61,10 +59,11 @@
     &__grid {
       display: flex;
       overflow-x:scroll;
-      overflow-y: hidden;
       width: auto;
       margin-right: 0;
       margin-left: 0;
+      column-gap: 15px;
+
     }
 
     &__decoration-right {

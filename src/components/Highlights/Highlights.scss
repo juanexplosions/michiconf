@@ -25,7 +25,7 @@
   }
 
   &__description {
-    margin-top: 4px;
+    margin-top: 12px;
     margin-bottom: 56px;
     padding-right: 64px;
     font-size: 16px;
@@ -51,6 +51,10 @@
     font-size: 48px;
     font-weight: 300;
     min-width: 68px;
+
+    &::before {
+      content: "0";
+    }
   }
 
   &__text {
@@ -70,6 +74,10 @@
     font-weight: 500;
     min-width: 68px;
     @include main-gradient;
+
+    &::before {
+      content: "0";
+    }
   }
 
   &__text--active {
@@ -186,6 +194,7 @@
 
     &__description {
       padding-right: 0;
+      margin-bottom: 24px;
     }
 
     &__paws {
@@ -194,19 +203,19 @@
 
     &__panel {
       position: relative;
-      max-height: 475px;
+      max-height: 455px;
       width: auto;
       background-color: rgba($color: #1d1e22, $alpha: 0.6);
       border-radius: 24px;
       z-index: -2;
-      margin-top: 61px;
+      margin-top: 24px;
     }
 
-    &__text{
+    &__text {
       min-width: 0px;
     }
 
-    &__text--active{
+    &__text--active {
       min-width: 0px;
     }
 
@@ -216,7 +225,80 @@
       width: 100%;
     }
 
-    &__cat{
+    &__navigation {
+      display: flex;
+      margin-top: 60px;
+      max-width: 500px;
+      justify-content: space-between;
+    }
+
+    &__button {
+      border: 1px solid #12c6b0;
+      border-radius: 16px;
+      background-color: transparent;
+      padding: 8px 10px;
+      height: 40px;
+      width: 40px;
+    }
+
+    &__right {
+      rotate: 180deg;
+    }
+
+    &__star {
+      position: absolute;
+      top: -45%;
+      left: 91%;
+      transform: translateX(10%);
+      width: 9%;
+      min-width: 50px;
+    }
+
+    &__description-panel {
+      margin: 0px;
+      padding: 32px 18% 90% 10%;
+      font-size: 18px;
+      font-weight: 300;
+      color: #a9aaad;
+      z-index: 1;
+      line-height: 26px;
+    }
+
+    &__cat {
+      right: 50%;
+      transform: translateX(50%);
+    }
+
+    &__circle {
+      width: min(40vw, 250px);
+      height: min(40vw, 250px);
+      top: -8%;
+      right: -12%;
+      opacity: 0.34;
+    }
+
+    &__dots-container {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+
+    &__dot {
+      border-radius: 32px;
+      background-color: #008d85;
+      opacity: 0.5;
+      width: 16px;
+      height: 8px;
+    }
+
+    &__dot--active {
+      border-radius: 32px;
+      background-color: #00BCB1;
+      opacity: 1;
+      width: 40px;
+      height: 8px;
     }
   }
 }

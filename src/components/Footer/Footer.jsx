@@ -1,5 +1,4 @@
 import "./Footer.scss";
-import { FooterPatitas } from "/src/components/svg/FooterPatitas.jsx";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 export default function Footer() {
@@ -8,7 +7,7 @@ export default function Footer() {
       <footer className="footer">
       <div className="footer__decoration"></div>
       <div className="footer__container">
-          <img src="/michiconf-gradient.svg" alt="" />
+          <img src="/michiconf-gradient.svg" alt="" className="footer__logo" />
           <p className="footer__text">
             MichiConf reserva sus derechos de admisión <br /> (sí, no queremos
             perros en la conf)
