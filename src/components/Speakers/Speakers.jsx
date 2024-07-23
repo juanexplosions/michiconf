@@ -1,7 +1,7 @@
 import SpeakerCard from "../SpeakerCard/SpeakerCard";
 import SignupButton from "../SignupButton/SignupButton";
 import "./Speakers.scss";
-import speakersInfo from "/Users/juanfeperalta/Documents/Playground/michiconf/src/data/speakersInfo.js";
+import speakersInfo from "../../data/speakersInfo.js";
 
 export default function Speakers() {
   return (

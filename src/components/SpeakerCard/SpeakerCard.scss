@@ -66,14 +66,9 @@
       border-radius: 16px;
       overflow: hidden;
       min-width: 270px;
+      height: 365px;
 
-      &:first-child {
-        margin-left: 5%;
-      }
 
-      &:last-child {
-        margin-right: 5%;
-      }
     }
 
     &__image {

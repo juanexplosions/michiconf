@@ -59,6 +59,9 @@
         align-items: center;
         cursor: pointer;
         border-radius: 8px;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
 
         .accordion__title-text {
           margin: 0;
@@ -73,7 +76,7 @@
           color: $primary-color;
         }
 
-        .close{
+        .close {
           color: #939598;
           font-weight: 300;
         }
