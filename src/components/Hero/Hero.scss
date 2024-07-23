@@ -11,8 +11,9 @@
     height: auto;
     filter: blur(50px);
   }
-  &__signup{
-    grid-area: signup;
+  &__cta {
+    z-index: 10;
+    grid-area: cta;
   }
 
   &__background-right {
@@ -27,17 +28,15 @@
   }
 
   &__image-container {
+    grid-area: image;
     position: relative;
-
+    margin-top: -100px;
     .hero__image {
-      grid-area: image;
       position: relative;
       height: auto;
       max-width: 100%;
       bottom: -4px;
     }
-
-    
 
     .hero__background-center {
       position: absolute;
@@ -56,7 +55,7 @@
     position: relative;
   }
 
-  &__noise{
+  &__noise {
     position: absolute;
     background: url("hero-noise.svg") repeat;
     width: 100vw;
@@ -66,7 +65,6 @@
     bottom: 0;
     z-index: -3;
   }
-
 }
 
 .hero__nav {
@@ -103,14 +101,14 @@
   padding: 12px 24px;
   border-radius: 24px;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .hero__main-info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr repeat(4, auto);
-  grid-template-areas: "logo description" "logo imagen" "date imagen" "location imagen" "signup imagen";
-
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "logo description" "cta image";
 
   width: 80vw;
   margin: auto;
@@ -151,13 +149,11 @@
 }
 
 .hero__date {
-  grid-area: date;
   display: flex;
   padding: 3.5px 0px;
 }
 
 .hero__location {
-  grid-area: location;
   display: flex;
   margin-bottom: 22px;
   padding: 3.5px 0px;
@@ -185,6 +181,7 @@
   font-size: 100%;
   font-weight: 300;
   padding: 5% 0%;
+  padding-left: 10%;
   line-height: 170%;
 }
 
@@ -204,16 +201,15 @@
   );
 }
 
-
-@media (max-width: 1023px)  {
-  .hero{
+@media (max-width: 1023px) {
+  .hero {
     &__background-left {
-    top: -80px;
-    left: -100px;
-    z-index: -4;
-    width: 340px;
-    height: auto;
-    filter: blur(30px);
+      top: -80px;
+      left: -100px;
+      z-index: -4;
+      width: 340px;
+      height: auto;
+      filter: blur(30px);
     }
 
     &__background-right {
@@ -225,22 +221,24 @@
       filter: blur(30px);
     }
 
-    &__main-info{
+    &__main-info {
       grid-template-columns: 1fr;
-      grid-template-areas: "logo" "description" "date" "location" "signup" "imagen";
+      grid-template-areas: "logo" "description" "cta" "image";
       width: 90vw;
       margin-top: 20px;
       max-width: 500px;
     }
 
-    &__nav-list{
+    &__nav-list {
       display: none;
     }
 
-    &__signup-button{
+    &__signup-button {
       display: none;
     }
 
-    
+    &__image-container {
+      margin-top: 0;
+    }
   }
 }
