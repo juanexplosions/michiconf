@@ -28,14 +28,13 @@ export default function Highlights() {
 
   return (
     <>
-      <section className="highlights">
+      <section className="highlights" id="highlights">
         <div className="highlights__selector">
           <h2 className="highlights__title">
             ¿Por qué no te puedes perder la MichiCONF?
           </h2>
           <p className="highlights__description">
-            Es más que solo una conf, es una fiesta gatuna desbordante de locura
-            y diversión.
+            Aquí aprenderás a cómo ser un mejor gato y dejar de depender de las croquetas que te da tu humano.
           </p>
           {isMobile ? (
             <HighlightItem

@@ -57,7 +57,7 @@
 
   &__noise {
     position: absolute;
-    background: url("hero-noise.svg") repeat;
+    background: url("./hero-noise.svg") repeat;
     width: 100vw;
     height: 100%;
     max-height: 2000px;
@@ -150,7 +150,7 @@
 
 .hero__date {
   display: flex;
-  padding: 3.5px 0px;
+  padding: 10px 0px;
 }
 
 .hero__location {
@@ -178,7 +178,7 @@
 
 .hero__description {
   grid-area: description;
-  font-size: 100%;
+  font-size: 18px;
   font-weight: 300;
   padding: 5% 0%;
   padding-left: 10%;
@@ -213,12 +213,17 @@
     }
 
     &__background-right {
-      top: -50px;
-      right: -100px;
+      top: -380px;
+      right: -60px;
       z-index: -4;
-      width: 150px;
+      width: 70px;
       height: auto;
       filter: blur(30px);
+    }
+
+    &__nav{
+      max-width: 500px;
+      width: 90%;
     }
 
     &__main-info {
@@ -233,12 +238,37 @@
       display: none;
     }
 
+
     &__signup-button {
       display: none;
     }
 
     &__image-container {
       margin-top: 0;
+    }
+
+    &__description {
+      padding: 0;
+      padding-left: 0;
+      padding-bottom: 16px;
+      padding-top: 16px;
+      font-size: 14px;
+    }
+
+    &__date {
+      padding-bottom: 12px;
+    }
+
+    &__date-text{
+      font-size: 14px;
+    }
+
+    &__location-text {
+      font-size: 14px;
+    }
+
+    &__state{
+      font-size: 14px;
     }
   }
 }

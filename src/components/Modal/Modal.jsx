@@ -15,12 +15,12 @@ export default function Modal({ showModal, toggleModal, handleBackgroundClick, p
             <Icon icon="gravity-ui:xmark" className="modal__icon" />
           </button>
         </div>
-        <h2 className="modal__title">¡Llegaste miau tarde! :(</h2>
+        <h2 className="modal__title">¡Llegaste tarde! :(</h2>
         <p className="modal__text">
-          Ya se acabaron todos los tickerts de la michi conf, eso te pasa por calabaza
+          Ya se acabaron todas las entradas de la MichiCONF. <br /> Eso te pasa por calabaza
         </p>
         <p className="modal__note">
-          Nos veremos en otro universo de michis uwu
+          Nos veremos en la MichiCONF 2025 uwu
         </p>
         <img className="modal__image" src="/fixed/michi-02.png" alt="" />
         <img className="modal__decoration" src="/modal-decoration.svg" alt="" />

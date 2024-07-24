@@ -15,7 +15,7 @@ export default function Banner() {
         className="banner__light"
       />
       <h2 className="banner__title">
-        Are you ready to get started? <br /> We got you covered!
+        Este será el mejor día de tus 7 vidas. <br />Únete a la MichiCONF
       </h2>
       <div className="banner__button-container">
         <SignupButton />

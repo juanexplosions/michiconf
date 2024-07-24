@@ -2,30 +2,30 @@ const fixedCat = [
   {
     id: 1,
     description:
-      "1Cada charla, cada taller, y cada actividad están diseñados para hacerte reír a carcajadas y dejarte boquiabierto.",
+      "Este es nuestro evento exclusivo. Por y para gatos. Con una organización implacable. Los perros ni pueden organizarse para armar algo así.",
     img: "/fixed/michi-01.png",
-    title: "Evento fuera de lo común",
+    title: "Es un evento exclusivo y secreto",
   },
   {
     id: 2,
     description:
-      "2Cada charla, cada taller, y cada actividad están diseñados para hacerte reír a carcajadas y dejarte boquiabierto.",
+      "Preparamos miles de actividades para ti: cómo maullar para que los humanos te den más comida, cómo dormir en posiciones incómodas, y más.",
       img: "/fixed/michi-02.png",
-      title: "Evento fuera de lo común",
+      title: "Talleres y workshops gatunos",
   },
   {
     id: 3,
     description:
-      "3Cada charla, cada taller, y cada actividad están diseñados para hacerte reír a carcajadas y dejarte boquiabierto.",
+      "Ya estamos grandecitos para orinar en territorio ajeno y pelear en el techo del auditorio. Este será un lugar libre de peleas.",
       img: "/fixed/michi-03.png",
-      title: "Evento fuera de lo común",
+      title: "Libres de peleas y malos ratos",
   },
   {
     id: 4,
     description:
-      "4Cada charla, cada taller, y cada actividad están diseñados para hacerte reír a carcajadas y dejarte boquiabierto.",
+      "Contaremos con salones exclusivos para tomar la siesta de 20 horas, con capacidad de hasta 100 gatos por salón.",
       img: "/fixed/michi-04.png",
-      title: "Evento fuera de lo común",
+      title: "Lugares para dormir",
   },
 ];
 

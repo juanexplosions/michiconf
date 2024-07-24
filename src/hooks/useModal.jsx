@@ -6,7 +6,17 @@ export default function useModal() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [audio] = useState(new Audio(sound));
 
-  const toggleModal = () => setShowModal(!showModal);
+  const toggleModal = () => {
+    setShowModal(!showModal);
+    if (!showModal) {
+      audio.play();
+      setIsPlaying(true);
+    } else {
+      audio.pause();
+      audio.currentTime = 0;
+      setIsPlaying(false);
+    }
+  };
 
   const handleBackgroundClick = (event) => {
     if (event.target.classList.contains("modal__background")) {
@@ -26,10 +36,6 @@ export default function useModal() {
 
   useEffect(() => {
     audio.addEventListener("ended", () => setIsPlaying(false));
-    return () => {
-      audio.pause();
-      audio.currentTime = 0;
-    };
   }, [audio]);
 
   return {

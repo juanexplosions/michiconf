@@ -27,7 +27,7 @@ export default function Faq() {
   };
 
   return (
-    <section className="faq">
+    <section className="faq" id="faq">
       <div className="faq__info">
         <div className="faq__circle-upper"></div>
         <div className="faq__circle-lower"></div>

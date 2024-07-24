@@ -1,3 +1,5 @@
+@import "src/styles/_settings";
+
 .footer {
   background-color: #131416;
   position: relative;
@@ -19,7 +21,7 @@
     width: 100%;
     height: 100%;
     background: url("/footer-patitas.svg");
-    background-size: contain;
+    background-size: cover;
     mask-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 1) 0%,
@@ -30,6 +32,7 @@
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0) 100%
     );
+    z-index: 0;
   }
 
   &__made-by {
@@ -56,12 +59,19 @@
     justify-content: end;
     align-items: center;
     gap: 35px;
+    z-index: 2;
   }
 
   &__icon {
     height: 25px;
     width: 25px;
     color: #a9aaad;
+    cursor: pointer;
+
+    &:hover {
+      color: #ae11f8;
+      transition-duration: 0.3s;
+    }
   }
 
   &__text {
@@ -80,18 +90,19 @@
     a {
       color: #a9aaad;
       text-decoration: none;
+      cursor: pointer;
+      z-index: 2;
     }
   }
 }
 
 @media (max-width: 1023px) {
   .footer {
-
-    &__decoration{
+    &__decoration {
       background-repeat: no-repeat;
-      background-position-y: 90%;
+      background-position-y: 100%;
       background-size: 150vh;
-
+      
     }
     &__container {
       max-width: 500px;
@@ -116,7 +127,7 @@
       row-gap: 40px;
     }
 
-    &__made-by{
+    &__made-by {
       padding-left: 10%;
       padding-right: 10%;
       padding-top: 13px;

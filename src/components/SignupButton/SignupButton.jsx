@@ -5,7 +5,6 @@ import "/src/components/SignupButton/SignupButton.scss";
 
 export default function SignupButton() {
   const { showModal, toggleModal, handleBackgroundClick, playMusic, isPlaying } = useModal();
-
   return (
     <>
       <a className="signup-button">

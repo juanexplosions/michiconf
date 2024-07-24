@@ -6,7 +6,7 @@ import speakersInfo from "../../data/speakersInfo.js";
 export default function Speakers() {
   return (
     <>
-      <section className="speakers">
+      <section className="speakers" id="speakers">
         <h2 className="speakers__title">Speakers</h2>
         <div className="speakers__grid">
           {speakersInfo.map((speakerInfo, index) => (

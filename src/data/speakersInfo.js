@@ -2,50 +2,50 @@ const speakersInfo = [
   {
     id: 1,
     name: "Taychi Swift",
-    job: "CEO en Miauppple",
+    job: "Cantante y compositora",
     title:
-      "Por qué aruñar muebles es tan importante como levantar capital en Sillicon valley",
+      "¿Por qué el karma es un gato? La importancia de no confiar en gatos",
     img: "/michis/speaker-01.png",
   },
   {
     id: 2,
     name: "Smichi Jobs",
-    job: "CEO en Miaucrosoft",
+    job: "CEO en Catpple",
     title:
-      "Por qué aruñar muebles es tan importante como levantar capital en Sillicon valley",
+      "El poder de la disciplina: cómo liderar una big tech y dormir 20 horas al día",
     img: "/michis/speaker-02.png",
   },
   {
     id: 3,
-    name: "Taychi Swift",
-    job: "CEO en Miauppple",
+    name: "Chris Meowtin",
+    job: "Cantante en Catplay",
     title:
-      "Por qué aruñar muebles es tan importante como levantar capital en Sillicon valley",
-    img: "/michis/speaker-01.png",
+      "Cómo escribí Sky Full of Cats mientras estaba peleando con otro gato en el techo",
+    img: "/michis/speaker-03.png",
   },
   {
     id: 4,
-    name: "Smichi Jobs",
-    job: "CEO en Miaucrosoft",
+    name: "Grace Hoppurr",
+    job: "Creadora de CATBOL",
     title:
-      "Por qué aruñar muebles es tan importante como levantar capital en Sillicon valley",
-    img: "/michis/speaker-02.png",
+      "Así inventé el primer lenguaje de programación durante el Maullido Frío",
+    img: "/michis/speaker-04.png",
   },
   {
     id: 5,
-    name: "Taychi Swift",
-    job: "CEO en Miauppple",
+    name: "Leonardo DiCatrio",
+    job: "Actor",
     title:
-      "Por qué aruñar muebles es tan importante como levantar capital en Sillicon valley",
-    img: "/michis/speaker-01.png",
+      "Las 10 enseñanza que me dejó El Gato de Wall Street",
+    img: "/michis/speaker-05.png",
   },
   {
     id: 6,
-    name: "Smichi Jobs",
-    job: "CEO en Miaucrosoft",
+    name: "Mewryl Streep",
+    job: "Actríz",
     title:
-      "Por qué aruñar muebles es tan importante como levantar capital en Sillicon valley",
-    img: "/michis/speaker-02.png",
+      "El Gato Viste a La Moda: de la calle a Catollywood",
+    img: "/michis/speaker-06.png",
   }
 ];
 
