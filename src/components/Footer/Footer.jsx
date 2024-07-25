@@ -31,9 +31,6 @@ export default function Footer() {
           </div>
 
           <div className="footer__shorcuts">
-            <a href="#hero" className="footer__link">
-              Inicio
-            </a>
             <a href="#speakers" className="footer__link">
               Speakers
             </a>
