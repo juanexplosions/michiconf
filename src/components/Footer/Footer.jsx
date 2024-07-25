@@ -16,7 +16,10 @@ export default function Footer() {
             <a href="https://www.behance.net/alejandragao" target="_blank">
               <Icon icon="mdi:behance" className="footer__icon" />
             </a>
-            <a href="https://github.com/juanexplosions/michiconf" target="_blank">
+            <a
+              href="https://github.com/juanexplosions/michiconf"
+              target="_blank"
+            >
               <Icon icon="mdi:github" className="footer__icon" />
             </a>
           </div>
@@ -37,7 +40,15 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer__made-by">
-          Creado con miau por Alejandra Avendaño y Juan Felipe Peralta uwu
+          Creado con miau por{" "}
+          <a href="https://www.behance.net/alejandragao" target="_blank">
+            Alejandra Avendaño
+          </a>{" "}
+          y{" "}
+          <a href="https://juanexplosions.com" target="_blank">
+            Juan Felipe Peralta
+          </a>{" "}
+          uwu
         </div>
       </footer>
     </>

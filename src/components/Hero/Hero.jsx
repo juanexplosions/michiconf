@@ -39,17 +39,12 @@ export default function Hero() {
             </li>
             <li className="hero__nav-item">
               <a href="#highlights" className="hero__nav-link">
-                ¿Por qué?
+                Michi beneficios
               </a>
             </li>
             <li className="hero__nav-item">
               <a href="#faq" className="hero__nav-link">
                 Michi preguntas
-              </a>
-            </li>
-            <li className="hero__nav-item">
-              <a href="#footer" className="hero__nav-link">
-                Sobre nosotros
               </a>
             </li>
           </ul>

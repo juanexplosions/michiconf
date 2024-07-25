@@ -52,6 +52,11 @@
     color: #a9aaad;
 
     border: 1px solid rgba($color: #ae11f8, $alpha: 0.2);
+
+    a {
+      color: #a9aaad;
+
+    }
   }
 
   &__social-media {
@@ -67,10 +72,10 @@
     width: 25px;
     color: #a9aaad;
     cursor: pointer;
+    transition-duration: 0.3s;
 
     &:hover {
       color: #ae11f8;
-      transition-duration: 0.3s;
     }
   }
 
@@ -90,8 +95,13 @@
     a {
       color: #a9aaad;
       text-decoration: none;
+      transition-duration: 0.3s;
+
       cursor: pointer;
       z-index: 2;
+      &:hover {
+        color: #ae11f8;
+      }
     }
   }
 }
@@ -102,7 +112,6 @@
       background-repeat: no-repeat;
       background-position-y: 100%;
       background-size: 150vh;
-      
     }
     &__container {
       max-width: 500px;
