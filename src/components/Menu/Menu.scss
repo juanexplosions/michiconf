@@ -1,0 +1,86 @@
+@import "src/styles/_settings";
+.menu {
+  &__icon {
+    background-color: transparent;
+    border: none;
+    color: #b5b5b5;
+    font-size: 18px;
+  }
+  
+  &__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(6, 7, 9, 1);
+    z-index: 20;
+    -webkit-backdrop-filter: blur(100px);
+    display: flex;
+    justify-content: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 19px;
+    margin-bottom: 19px;
+    width: 90%;
+    max-width: 500px;
+  }
+
+  &__logo {
+    height: 26px;
+  }
+
+  &__main-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__close {
+    display: grid;
+    width: 32px;
+    height: 32px;
+    font-size: 11px;
+    place-items: center;
+    justify-items: center;
+    cursor: pointer;
+    color: #1c1e4d;
+    background-color: $primary-color;
+    border-radius: 50%;
+    border-color: transparent;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 28px;
+    flex-direction: column;
+
+    padding-top: 28px;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+    }
+
+    a {
+      color: $primary-color;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      svg {
+        color: $secondary-color;
+        padding-right: 15px;
+      }
+    }
+  }
+}

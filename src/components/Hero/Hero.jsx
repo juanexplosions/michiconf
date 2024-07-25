@@ -2,7 +2,10 @@ import SignupButton from "/src/components/SignupButton/SignupButton.jsx";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import useModal from "/src/hooks/useModal";
 import Modal from "/src/components/Modal/Modal";
+import Menu from "../Menu/Menu";
 import "/src/components/Hero/Hero.scss";
+import { useWindowSize } from "@uidotdev/usehooks";
+import navInfo from "../../data/navInfo.js";
 
 export default function Hero() {
   const {
@@ -12,6 +15,9 @@ export default function Hero() {
     playMusic,
     isPlaying,
   } = useModal();
+
+  const size = useWindowSize();
+  const isMobile = size.width < 1024;
 
   return (
     <>
@@ -32,21 +38,13 @@ export default function Hero() {
           </div>
 
           <ul className="hero__nav-list">
-            <li className="hero__nav-item">
-              <a href="#speakers" className="hero__nav-link">
-                Speakers
-              </a>
-            </li>
-            <li className="hero__nav-item">
-              <a href="#highlights" className="hero__nav-link">
-                Michi beneficios
-              </a>
-            </li>
-            <li className="hero__nav-item">
-              <a href="#faq" className="hero__nav-link">
-                Michi preguntas
-              </a>
-            </li>
+            {navInfo.map((item, index) => (
+              <li className="hero__nav-item" key={index}>
+                <a href={item.href} className="hero__nav-link">
+                  {item.text}
+                </a>
+              </li>
+            ))}
           </ul>
           <button
             type="button"
@@ -55,6 +53,7 @@ export default function Hero() {
           >
             <p>Regístrate</p>
           </button>
+          {isMobile && <Menu />}
         </nav>
         <section className="hero__main-info">
           <img src="./michiconf-title.svg" alt="" className="hero__logo-conf" />
@@ -65,7 +64,9 @@ export default function Hero() {
             </div>
             <div className="hero__location">
               <Icon icon="ic:outline-location-on" className="hero__icon" />
-              <p className="hero__location-text">Aoshima (Isla del Gato), Japón</p>
+              <p className="hero__location-text">
+                Aoshima (Isla del Gato), Japón
+              </p>
               <p className="hero__state">Online</p>
             </div>
             <div className="hero__signup">
@@ -73,7 +74,8 @@ export default function Hero() {
             </div>
           </div>
           <p className="hero__description">
-            La conferencia hecha por y para gatitos. El encuentro anual para debatir sobre la tecnología y el futuro de la comunidad gatuna.
+            La conferencia hecha por y para gatitos. El encuentro anual para
+            debatir sobre la tecnología y el futuro de la comunidad gatuna.
           </p>
           <div className="hero__image-container">
             <img

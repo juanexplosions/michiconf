@@ -42,6 +42,8 @@
       rgba(255, 242, 242, 0.03) 100%
     );
     backdrop-filter: blur(128px);
+    -webkit-backdrop-filter: blur(128px);
+
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
     padding-top: 8px;
