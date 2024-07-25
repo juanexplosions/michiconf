@@ -31,7 +31,7 @@ export default function Highlights() {
       <section className="highlights" id="highlights">
         <div className="highlights__selector">
           <h2 className="highlights__title">
-            ¿Por qué no te puedes perder la MichiCONF?
+            Por qué no te puedes perder la
           </h2>
           <p className="highlights__description">
             Aquí aprenderás a cómo ser un mejor gato y dejar de depender de las croquetas que te da tu humano.

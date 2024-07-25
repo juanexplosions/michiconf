@@ -7,7 +7,13 @@ export default function Footer() {
       <footer className="footer" id="footer">
         <div className="footer__decoration"></div>
         <div className="footer__container">
-          <img src="/michiconf-gradient.svg" alt="" className="footer__logo" />
+          <a href="#hero" className="footer__image-link">
+            <img
+              src="/michiconf-gradient.svg"
+              alt=""
+              className="footer__logo"
+            />
+          </a>
           <p className="footer__text">
             MichiCONF reserva sus derechos de admisión <br /> (sí, no
             aceptaremos perros ni loros en el evento)
@@ -32,7 +38,7 @@ export default function Footer() {
               Speakers
             </a>
             <a href="#highlights" className="footer__link">
-              ¿Por qué?
+              Michi beneficios
             </a>
             <a href="#faq" className="footer__link">
               Michi preguntas

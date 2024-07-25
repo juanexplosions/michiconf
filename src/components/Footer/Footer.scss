@@ -16,6 +16,12 @@
     max-width: 1200px;
   }
 
+  &__image-link{
+    cursor: pointer;
+    z-index: 4;
+    width: 305px;
+  }
+
   &__decoration {
     position: absolute;
     width: 100%;

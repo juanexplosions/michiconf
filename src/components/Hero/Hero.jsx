@@ -27,14 +27,16 @@ export default function Hero() {
 
         <nav className="hero__nav">
           <div>
-            <a className="hero__logo-link">
+            <div className="hero__logo-link">
               <img
                 src="hero-background-left.png"
                 alt=""
                 className="hero__background-left"
               />
-              <img src="./michiconf-white.svg" alt="Logo MichiConf" />
-            </a>
+              <a className="hero__logo-click" href="https://michiconf.netlify.app/">
+                <img src="./michiconf-white.svg" alt="Logo MichiConf" />
+              </a>
+            </div>
           </div>
 
           <ul className="hero__nav-list">

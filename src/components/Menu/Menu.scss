@@ -4,16 +4,16 @@
     background-color: transparent;
     border: none;
     color: #b5b5b5;
-    font-size: 18px;
+    font-size: 24px;
   }
-  
+
   &__background {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(6, 7, 9, 1);
+    background-color: rgb(23, 23, 23);
     z-index: 20;
     -webkit-backdrop-filter: blur(100px);
     display: flex;
