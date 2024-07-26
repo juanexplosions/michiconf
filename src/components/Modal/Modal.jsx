@@ -1,7 +1,31 @@
+import { useEffect } from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import "/src/components/Modal/Modal.scss";
 
-export default function Modal({ showModal, toggleModal, handleBackgroundClick, playMusic, isPlaying }) {
+const preloadImages = (imageUrls) => {
+  imageUrls.forEach((url) => {
+    const img = new Image();
+    img.src = url;
+  });
+};
+
+export default function Modal({
+  showModal,
+  toggleModal,
+  handleBackgroundClick,
+  playMusic,
+  isPlaying,
+}) {
+  useEffect(() => {
+    const imagesToPreload = [
+      "/fixed/michi-05.png",
+      "/modal-decoration.svg",
+      "/modal-colors.png",
+      "/modal-paws.svg",
+    ];
+    preloadImages(imagesToPreload);
+  }, []);
+
   if (!showModal) return null;
 
   return (
@@ -9,7 +33,10 @@ export default function Modal({ showModal, toggleModal, handleBackgroundClick, p
       <div className="modal__content">
         <div className="modal__buttons">
           <button className="modal__button" onClick={playMusic}>
-            <Icon icon={isPlaying ? "mdi:music" : "mdi:music-off"} className="modal__icon" />
+            <Icon
+              icon={isPlaying ? "mdi:music" : "mdi:music-off"}
+              className="modal__icon"
+            />
           </button>
           <button className="modal__button" onClick={toggleModal}>
             <Icon icon="gravity-ui:xmark" className="modal__icon" />
@@ -17,11 +44,10 @@ export default function Modal({ showModal, toggleModal, handleBackgroundClick, p
         </div>
         <h2 className="modal__title">¡Llegaste tarde! :(</h2>
         <p className="modal__text">
-          Ya se acabaron todas las entradas de la MichiCONF. <br /> Eso te pasa por calabaza
+          Ya se acabaron todas las entradas de la MichiCONF. <br /> Eso te pasa
+          por calabaza
         </p>
-        <p className="modal__note">
-          Nos veremos en la MichiCONF 2025 uwu
-        </p>
+        <p className="modal__note">Nos veremos en la MichiCONF 2025 uwu</p>
         <img className="modal__image" src="/fixed/michi-05.png" alt="" />
         <img className="modal__decoration" src="/modal-decoration.svg" alt="" />
         <img className="modal__colors" src="/modal-colors.png" />

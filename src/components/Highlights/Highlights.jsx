@@ -1,15 +1,26 @@
-// Highlights.js
+import React, { useState, useEffect } from "react";
 import "./Highlights.scss";
 import fixedCat from "../../data/fixedCats";
-import React, { useState } from "react";
 import { useWindowSize } from "@uidotdev/usehooks";
 import HighlightItem from "./HighlightItem";
+
+const preloadImages = (imageUrls) => {
+  imageUrls.forEach((url) => {
+    const img = new Image();
+    img.src = url;
+  });
+};
 
 export default function Highlights() {
   const [activeColor, setActiveColor] = useState(1);
 
   const size = useWindowSize();
   const isMobile = size.width < 1024;
+
+  useEffect(() => {
+    const imagesToPreload = fixedCat.map((cat) => cat.img);
+    preloadImages(imagesToPreload);
+  }, []);
 
   const handleActiveColor = (id) => {
     setActiveColor(id);
@@ -30,11 +41,10 @@ export default function Highlights() {
     <>
       <section className="highlights" id="highlights">
         <div className="highlights__selector">
-          <h2 className="highlights__title">
-            Por qué no te puedes perder la
-          </h2>
+          <h2 className="highlights__title">Por qué no te puedes perder la</h2>
           <p className="highlights__description">
-            Aquí aprenderás a cómo ser un mejor gato y dejar de depender de las croquetas que te da tu humano.
+            Aquí aprenderás a cómo ser un mejor gato y dejar de depender de las
+            croquetas que te da tu humano.
           </p>
           {isMobile ? (
             <HighlightItem
