@@ -193,6 +193,12 @@
     width: 90%;
     max-width: 500px;
 
+    &__text--active::before,
+    &__text::before {
+      content: "";
+      margin-left: 0px;
+    }
+
     &__title {
       font-size: 24px;
       line-height: 42px;
@@ -301,7 +307,7 @@
 
     &__dot--active {
       border-radius: 32px;
-      background-color: #00BCB1;
+      background-color: #00bcb1;
       opacity: 1;
       width: 40px;
       height: 8px;
