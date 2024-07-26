@@ -12,10 +12,10 @@ Este es proyecto para practicar React.js, CSS (con Sass y BEM) y JavaScript.
 1. Clona el proyecto
 2. Ve a la carpeta del proyecto `cd michiconf`
 3. Instala las dependencias `npm install`
-4. Corre el ambiente local con `npm run dev` si lo quieres ver desde desktop, o `npm run dev -- --host` para generar una dirección que te permita puedas verlo desde mobile también.
+4. Corre el ambiente local con `npm run dev` si lo quieres ver desde desktop, o `npm run dev -- --host` para generar una dirección y también puedas ver el proyecto desde mobile.
 
 ## Demo 💻
-También puedes ver la MichiCONF directamente aquí: [MichiCONF 2024](https://michiconf.netlify.app/)
+Puedes ver la MichiCONF directamente aquí: [MichiCONF 2024](https://michiconf.netlify.app/)
 
 ## Licencia 🔑
 The MIT License (MIT)
