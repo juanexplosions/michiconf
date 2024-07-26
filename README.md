@@ -11,7 +11,7 @@ Este es proyecto para practicar React.js, CSS (con Sass y BEM) y JavaScript.
 ## Instalación 🔨
 1. Clona el proyecto
 2. Ve a la carpeta del proyecto `cd michiconf`
-3. Instala las dependencias npm install
+3. Instala las dependencias `npm install`
 4. Corre el ambiente local con `npm run dev` si lo quieres ver desde desktop, o `npm run dev -- --host` para generar una dirección que te permita puedas verlo desde mobile también.
 
 ## Demo 💻
