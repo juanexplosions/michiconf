@@ -2,7 +2,7 @@
 
 La conferencia hecha por y para gatitos. El encuentro anual para debatir sobre la tecnología y el futuro de la comunidad gatuna.
 
-Con *speakers importantes* como Taychi Swift y Smichi Jobs.
+Con **speakers importantes** como Taychi Swift y Smichi Jobs.
 
 Este es proyecto para practicar React.js, CSS (con Sass y BEM) y JavaScript.
 
@@ -21,6 +21,6 @@ También puedes ver la MichiCONF directamente aquí: [MichiCONF 2024](https://mi
 The MIT License (MIT)
 
 ## Agradecimientos ✨
-A [Alejandra Avendaño](https://www.linkedin.com/in/alejandragao/), *porque diseñó la MichiCONF* y juntos creamos la idea y el concepto creativo.
+A [Alejandra Avendaño](https://www.linkedin.com/in/alejandragao/), **porque diseñó la MichiCONF** y juntos creamos la idea y el concepto creativo.
 
 A [Mariangélica Useche](https://github.com/musartedev) (a.k.a Mus). Por ser mi mentora en el proyecto y en mi camino a ser frontend dev.
