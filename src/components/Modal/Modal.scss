@@ -11,7 +11,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 100;
+    z-index: 9998;
   }
 
   &__content {
@@ -22,7 +22,7 @@
     width: 100%;
     max-width: 750px;
     overflow: hidden;
-    z-index: 101;
+    z-index: 9999;
   }
 
   &__buttons {
