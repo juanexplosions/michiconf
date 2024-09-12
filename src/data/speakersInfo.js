@@ -36,7 +36,7 @@ const speakersInfo = [
     name: "Leonardo DiCatrio",
     job: "Actor",
     title:
-      "Las 10 enseñanza que me dejó El Gato de Wall Street",
+      "Las 10 enseñanzas que me dejó El Gato de Wall Street",
     img: "/michis/speaker-05.png",
   },
   {
